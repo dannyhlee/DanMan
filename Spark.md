@@ -52,11 +52,20 @@ import org.apache.hadoop.fs.{FileSystem, Path}
 
  val fs = FileSystem.get(new URI("hdfs://localhost:9000/"), spark.sparkContext.hadoopConfiguration)
  println(spark.sparkContext.hadoopConfiguration)
+ // output:
+ // Configuration: core-default.xml, core-site.xml, mapred-default.xml, mapred-site.xml, yarn-default.xml, yarn-site.xml, hdfs-default.xml, hdfs-site.xml, __spark_hadoop_conf__.xml
+
  val fsStatus = fs.listStatus(new Path("hdfs://localhost:9000/"))
  fsStatus.foreach(x=> println(x.getPath))
+ // output:
+ // hdfs://localhost:9000/tmp
+ // hdfs://localhost:9000/user
 
  val outputPath = new Path("/user/spark/trends")
  println(fs.exists(outputPath), outputPath)
+ // output: (on success, ie. file existed)
+ // (true,/user/spark/trends)
+ 
  if (fs.exists(outputPath))
    fs.delete(outputPath, true)
 ```
