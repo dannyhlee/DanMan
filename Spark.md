@@ -1,4 +1,5 @@
 
+
 ## Write file to HDFS from Spark
 
 #### Resolves Exception:
@@ -41,10 +42,27 @@ val ds = spark.read.textFile("hdfs://localhost:9000/user/<filename>")
 ##### As unix shell environment variable
 ```export HADOOP_USER_NAME=<username>```
 
-
 ---
 
-## Write file to HDFS from Spark
+## Delete HDFS file or directory from Spark
+
+```
+import java.net.URI
+import org.apache.hadoop.fs.{FileSystem, Path}
+
+ val fs = FileSystem.get(new URI("hdfs://localhost:9000/"), spark.sparkContext.hadoopConfiguration)
+ println(spark.sparkContext.hadoopConfiguration)
+ val fsStatus = fs.listStatus(new Path("hdfs://localhost:9000/"))
+ fsStatus.foreach(x=> println(x.getPath))
+
+ val outputPath = new Path("/user/spark/trends")
+ println(fs.exists(outputPath), outputPath)
+ if (fs.exists(outputPath))
+   fs.delete(outputPath, true)
+```
+---
+
+## Create SparkSQL Schema for Nested JSON objects using StructType (DataFrames)
 
 ##### Spark generated schema  `.printSchema()`
 ```
@@ -65,6 +83,8 @@ val ds = spark.read.textFile("hdfs://localhost:9000/user/<filename>")
 ```
 #### The proper schema for --^
 ```
+import org.apache.spark.sql.types._
+
 val trendSchema = new StructType()  
   .add("as_of", StringType)  
   .add("created_at", StringType)  
