@@ -1,3 +1,23 @@
+## Google Cloud DataProc 
+
+#### Problem:
+Tried to run a jar on Dataproc and got this error: Job failed with message [java.lang.ClassNotFoundException
+
+#### Solution: 
+Found this github [issue](https://github.com/googleapis/java-logging/issues/276): Dataproc java.lang.ClassNotFoundException: io.grpc.internal.BaseDnsNameResolverProvider #276
+which suggested adding these dependencies:
+```
+libraryDependencies += "com.google.cloud" % "google-cloud-logging" % "1.102.0" exclude("io.grpc", "grpc-alts")
+libraryDependencies += "io.grpc" % "grpc-alts" % "1.29.0"
+```
+
+#### Problem: Java.IO.Exception: Unexpected Exception type
+[error log](https://gist.github.com/dannyhlee/7f605cfeb5d8f5e68d898efea8c5d5a5)
+
+---
+
+
+---
 
 
 ## Write file to HDFS from Spark
