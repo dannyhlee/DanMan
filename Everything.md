@@ -1,5 +1,18 @@
 ## Google Cloud DataProc 
 
+#### Command clipboard:
+gsutil cp tracktrendsovertime_2.11-0.1.jar gs://d8trends
+
+
+gcloud dataproc jobs submit spark \
+--cluster=cluster-d8trends \
+--class=queries.SampleQueries \
+--jars=gs://d8trends/simplified-trending_2.11-0.1.jar \
+--region=us-central1 \
+-- #LifeGoesOnWithBTS gs://d8trends/input/ gs://d8trends/output2
+
+---
+
 #### Problem:
 Tried to run a jar on Dataproc and got this error: Job failed with message [java.lang.ClassNotFoundException
 
