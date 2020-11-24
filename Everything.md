@@ -11,11 +11,19 @@ libraryDependencies += "com.google.cloud" % "google-cloud-logging" % "1.102.0" e
 libraryDependencies += "io.grpc" % "grpc-alts" % "1.29.0"
 ```
 
+---
+
 #### Problem: Java.IO.Exception: Unexpected Exception type
 [error log](https://gist.github.com/dannyhlee/7f605cfeb5d8f5e68d898efea8c5d5a5)
 
----
+#### Solution:
+from this [SO post](https://stackoverflow.com/questions/54893850/apache-spark-throwing-deserialization-error-when-using-take-method-on-rdd)
 
+|  | was | changed to |
+|:---:|:---:|:---:|
+|Scala | 2.12.10 | 2.11.12 |
+|SparkSQL | 3.0.1 | 2.2.1 |
+|SBT | 1.3.13 | 1.2.0 |
 
 ---
 
