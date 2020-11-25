@@ -1,3 +1,13 @@
+## Spark-submit locally
+Start hdfs, yarn.
+```
+spark-submit \
+--class=simplifiedTrending.findAverageRank 
+--conf "spark.eventlog.enabled=false"  \
+target/scala-2.11/simplifiedtrending_2.11-0.1.jar sample_data_large.csv output
+
+```
+
 ## Google Cloud DataProc 
 
 #### Command clipboard:
