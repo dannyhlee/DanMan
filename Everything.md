@@ -1,4 +1,5 @@
 ## SBT assembly deduplication/merge strategy code
+```
 /* without this explicit merge strategy code you get a lot of noise from sbt-assembly 
    complaining about not being able to dedup files */
 assemblyMergeStrategy in assembly := {
@@ -22,7 +23,7 @@ assemblyMergeStrategy in assembly := {
     val oldStrategy = (assemblyMergeStrategy in assembly).value
     oldStrategy(x)
 }
-
+```
 
 ## Spark-submit locally
 Start hdfs, yarn.
