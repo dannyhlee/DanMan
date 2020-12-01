@@ -1,5 +1,11 @@
 ## SBT assembly deduplication/merge strategy code
 ```
+
+assemblyMergeStrategy in assembly := {
+  case PathList("META-INF", xs @ _*) => MergeStrategy.discard
+  case x => MergeStrategy.first
+}
+
 /* without this explicit merge strategy code you get a lot of noise from sbt-assembly 
    complaining about not being able to dedup files */
 assemblyMergeStrategy in assembly := {
@@ -25,10 +31,6 @@ assemblyMergeStrategy in assembly := {
 }
 ```
 
-assemblyMergeStrategy in assembly := {
-  case PathList("META-INF", xs @ _*) => MergeStrategy.discard
-  case x => MergeStrategy.first
-}
 
 
 
