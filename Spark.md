@@ -1,5 +1,11 @@
 
-
+## Get Spark configuration programatically
+```
+def printConf(session: SparkSession) = {
+ val allDaConfs = session.conf.getAll
+ for (c <- allDaConfs.keySet) { println(s"${c} -> ${allDaConfs(c)}\n") }
+}
+```
 
 ## Spark-submit locally
 Start hdfs, yarn.
