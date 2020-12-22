@@ -98,3 +98,20 @@ val a = io.StdIn.readInt()
     }
 
 
+---
+```
+import spark.implicits._
+
+val left = Seq(("a", 1.1), ("b", 2.2), ("d", 4.4))
+val right= Seq(("a", "alpha"), ("b", "beta"), ("c", "gamma"))
+
+val leftRDD = sc.parallelize(left)
+val rightRDD = sc.parallelize(right)
+
+val leftDf = leftRDD.toDF("letter", "aDouble")
+val rightDf = rightRDD.toDF("letter", "greekLetter")
+
+val left_outer =  leftDf.join(rightDf, leftDf("letter") === rightDf("letter"), "left_outer")
+
+left_outer.show()
+```
