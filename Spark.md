@@ -11,6 +11,12 @@ target/scala-2.11/simplifiedtrending_2.11-0.1.jar sample_data_large.csv output
 
 ```
 
+
+## Memory Error switches 
+- ++printGCDetails
+- ++HeapDumpOnOutOfMemoryError
+
+
 ## Google Cloud DataProc 
 
 #### Command clipboard:
