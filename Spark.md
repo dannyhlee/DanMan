@@ -7,6 +7,38 @@ def printConf(session: SparkSession) = {
 }
 ```
 
+## Dynamic Resource Allocation
+
+For large, long-running workloads (batch jobs), it may be necessary to set dynamic resource allocation to prevent the failure or degradation of performance as jobs go on.
+
+```
+ spark.dynamicAllocation.enabled true
+ spark.dynamicAllocation.minExecutors 2
+ spark.dynamicAllocation.schedulerBacklogTimeout 1m
+ spark.dynamicAllocation.maxExecutors 20
+ spark.dynamicAllocation.executorIdleTimeout 2min
+```
+
+Spark starts with 2 executors.  Then, as the task queue backlog increases, if the backlog timeout is exceeded waiting for resources, new executors will be requested.  If pending tasks have not been scheduled for a minute (schedulerBacklogTimeout) a new executor will be requested and launched (up to 20).  If an executor finishes work and is idle for 2 minutes (executorIdleTimeout) the spark driver will signal its termination.
+
+## Memory in Spark
+
+Spark executor memory  is divded in 3 sections, **execution**, **storage** and **reserved**.
+
+The standard split is 60%/40% (execution/storage) after 300 mb for **reserved**.  Execution and storage memory will sometimes use the others resources, when free.
+
+```
+ spark.driver.memory (default 1gb) - memory used by driver to receive data from executors (from operations like collect()).
+ spark.shuffle.file.buffer (default 32 kb) - recommended 1mb for more buffering before writing mape resutls to disk.
+ spark.file.transferTo - (default is true) - false will reduce copying of data b/w Java FileChannels [doc](https://books.japila.pl/apache-spark-internals/configuration-properties/#sparkfiletransferto)
+ spark.shuffle.unsafe.file.output.buffer - (default is 32kb) Sets amt of buffering when merging files during shuffle.  Larger values for larger workloads.
+ spark.io.compression.lz4.blockSize -(default is 32kb) increase to 512kb for shuffle file size decrease
+ spark.shuffle.service.index.cache.size - (default is 100m).
+ spark.shuffle.registration.timeout - (default is 5000ms, increase to 120000 ms.
+ spark.shuffle.registration.maxAttempts - default is 3, increase to 5 if needed.
+```
+
+
 ## Spark-submit locally
 Start hdfs, yarn.
 ```
