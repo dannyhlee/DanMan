@@ -1,3 +1,32 @@
+
+// process lines of an RDD read from a wikipedia log file gzip.
+// reference: Brian Clapper - RDDs, DataFrames and Datasets in Apache SPark - NE Scala 2016
+// url:                       https://youtu.be/pZQsDloGB4w?t=2324
+
+pagecounjtsRDDs.flatmap { line => 
+  line.split("""\s+""") match {
+    case Array(project, page, numRequests, contentSize) => Some((project, page, numRequests.toLong))
+    case _ => None
+  }
+}.
+filter { case (project, page, numRequests) => project == "en" }.
+map { case (project, page, numRequests) =-> (page, numRequests) }.
+reduceByKey(_ + _).
+sortBy({ case (page, numRequests) => numRequests }, ascending = false).
+take(100).
+foreach { case (page, totalRequests) => println(s"$page: $totalRequests") }
+
+
+// number of Mebibytes of a data set
+// https://umbertogriffo.gitbook.io/apache-spark-best-practices-and-tuning/sparksqlshufflepartitions_draft
+// number Of Megabytes = M = (N*V*W) / 1024^2
+
+//     N  =  number of records
+//     V  =  number of variables
+//     W  =  average width in bytes of a variable
+
+---
+
 arr.zipWithIndex.filter(_._2 %2 == 1).map(_._1)
 
 ---
@@ -67,3 +96,5 @@ val a = io.StdIn.readInt()
             functionTest
         }
     }
+
+
