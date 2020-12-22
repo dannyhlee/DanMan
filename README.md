@@ -1,2 +1,4 @@
 # DanMan
-### a proper manual repository for Dan.
+### all the notes.
+
+![scribble-horde](/images/scribble-horde.jpg)
