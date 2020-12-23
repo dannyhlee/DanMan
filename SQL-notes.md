@@ -193,7 +193,16 @@ reference: (XPath docs - https://www.w3schools.com/xml/xpath_intro.asp)
 
 ---
 
+## Sum and pivot
 
+    SELECT country,
+        IFNULL(SUM(CASE WHEN leisure_activity_type="Adventure park" THEN number_of_places END), 0) as adventure_park,
+        IFNULL(SUM(CASE WHEN leisure_activity_type="Golf" THEN number_of_places END), 0) as golf,
+        IFNULL(SUM(CASE WHEN leisure_activity_type="River cruise" THEN number_of_places END), 0) as river_cruise,
+        IFNULL(SUM(CASE WHEN leisure_activity_type="Kart racing" THEN number_of_places END), 0) as kart_racing
+    FROM countryActivities
+    GROUP BY country
+    ORDER BY country;
 
 
 
