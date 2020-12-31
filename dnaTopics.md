@@ -1,11 +1,11 @@
 ## Acronyms
 
 POC = Proof of concept   
-RACI = Responsible, Accountable, Consulted and Informed 
-ITIL = Information Technology Infrastructure Library (volume of best practices)
-COE = Center of Excellence - team/facility/entity provides leadership, best practices, research, support, training.
-TCO = Total Cost of Ownership
-GDPR = General Data Protection REgulation, 2016
+RACI = Responsible, Accountable, Consulted and Informed   
+ITIL = Information Technology Infrastructure Library (volume of best practices)   
+COE = Center of Excellence - team/facility/entity provides leadership, best practices, research, support, training.   
+TCO = Total Cost of Ownership   
+GDPR = General Data Protection REgulation, 2016   
 
 ## Numbers
 
@@ -26,3 +26,13 @@ SSS = Secure Scalable Stable
 ## Genome Solution
 
 ## NIA
+
+## Data Stores
+ODS = Operational Data Store, central database where data is integrated from disparate sources, can be used in front of a data warehouse to aggregate and cleanup data.
+
+#### OLTP
+Online Transaction Processing - real-time execution of large numbers of db transactions by large numbers of people.  Transactions are operations like change, insert, delete or query.  Atomicity and ACID characteristics are important.  OLTP systems process relatively simple transactions, very rapidly and available 24/7/365.  Large number of concurrent transactions means that any downtime or data loss can have significant and costly repercussions.  Requires frequent incrememental and whole backups. OLTP uses RDBMS.  Examples: atm/credit card processing/orders and bookings online
+
+#### OLAP 
+Online Analytical Processing System - Stores historical data from OLTP.  OLAP is optimized for complex data analysis by data scientists, analysts, BI workers - supports data mining, BI and other decision support applications.  OLAP uses multidimensional databases made up of RDBs.  OLAP queries are complex, on large numbers of records.  OLAP queries are slower than OLTP and do not change data (read-intensive). 
+
