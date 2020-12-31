@@ -16,10 +16,10 @@ YB = yottabytes = 1000 zb = 10^^24
 
 ## Data Operations Services
 
-ICC = I Command Center
-IDW = I Data Operations Workbench
-DSD = Data Strategy & Diagnostics
-SSS = Secure Scalable Stable
+ICC = I Command Center   
+IDW = I Data Operations Workbench   
+DSD = Data Strategy & Diagnostics   
+SSS = Secure Scalable Stable   
 
 ## Analytics Workbench
 
@@ -62,17 +62,25 @@ Real-time cloud consumption and analytics processing, runs on premise and on clo
 
 #### 1. Capture
 
-To obtain a snapshot of chosen subset of source data.  **static** - at a point in time.  **incremental** - changes since last static
+To obtain a snapshot of chosen subset of source data.  
+- **static** - at a point in time.  
+- **incremental** - changes since last static
 
 #### 2. Scrub
 
-To cleanse data using pattern recognition and AI to upgrade quality.  **fix errors** - missing fields, nulls, duplicates, misspellings, inconsistencies.  **ai usage** - decoding, reformating, time stamp, error detection, key gen.
+To cleanse data using pattern recognition and AI to upgrade quality. 
+- **fix errors** - missing fields, nulls, duplicates, misspellings, inconsistencies.  
+- **ai usage** - decoding, reformating, time stamp, error detection, key gen.
 
 #### 3. Transform
 
-Convert from operational system's format to data warehouse format.  **Record level** - Selection (data partitioning), Joining (data combining), Aggregation (summarization).  **Field level** - single field - 1 to 1, multi field - 1 to n, n to 1.
+Convert from operational system's format to data warehouse format. 
+- **Record level** - Selection (data partitioning), Joining (data combining), Aggregation (summarization). 
+- **Field level** - single field - 1 to 1, multi field - 1 to n, n to 1.
 
 #### 4. Load and Index
 
-Place transformed data into warehouse and create indexes.  **refresh mode** bulk rewrite of target data **update mode** only change are written.
+Place transformed data into warehouse and create indexes.  
+- **refresh mode** bulk rewrite of target data 
+- **update mode** only change are written.
 
