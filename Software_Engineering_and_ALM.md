@@ -89,8 +89,9 @@ Non-functional testing breaks down into:
   - Endurance testing (determine if system can sustain continous expected load and detect mem leaks)
   - Stress testing (determine system stability, breaking point and safe usage limits)
   - Spike testing (determine system ability to endure dramatic surges in load)
-  
-
+- Security testing
+- Reliability testing
+- Usability testing
 ---
 
 ### Agile 
@@ -107,7 +108,5 @@ Non-functional testing breaks down into:
 10. The best architectures, requirements and designs emerge from self-organizing teams.
 11. At regular intervals, the teams reflects on how to become more effective, then tunes and adjusts its behavior accordingly
 
-- Security testing
-- Reliability testing
-- Usability testing
+
 
