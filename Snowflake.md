@@ -53,4 +53,43 @@ Similar to auto-incrementing, primary keys (counters).  Created in the `Sequence
 - Avro: Data serialization system with rich data structures; compact/fast binary format; schema resolution; row based
 - ORC: columnar storage format with compression, fast read/write, predicate pushdown, both compressed/uncompressed storage available
   
-  
+#### Nested Semi-Structured Data
+
+The nesting pattern of data entities is called the `Object Model`.  Entities can be nested inside other entities.  
+
+In JSON:
+- attributes:values = key:value pairs
+- every entity is surrounded by curly braces
+- every k:v pair separated by colon and surrounded by double quotes
+
+Example of retrieving `first_name` of first `author` in entity `RAW_NESTED_BOOK`:
+```
+RAW_NESTED_BOOK:authors[0].first_name
+RAW_STATUS:entities:hashtags
+```
+
+Note: Snowflake uses zero-based index for entity lists
+
+To flatten:
+```
+SELECT value
+FROM TWEET_INJEST
+, TABLE(FLATTEN(RAW_STATUS:entities:hashtags));
+
+SELECT value
+FROM TWEET_INJEST
+,LATERAL FLATTEN
+(input => RAW_STATUS: entities:hashtags);
+```
+
+Casting:
+```
+SELECT value:text::STRING, value:text::VARCHAR
+FROM TWEET_INJEST
+,LATERAL_FLATTEN
+(input => RAW_STATUS:entities:hashtags);
+```
+
+
+
+
