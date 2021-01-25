@@ -28,3 +28,29 @@ FILES = ( 'weight.txt' )
 FILE_FORMAT = ( FORMAT_NAME = USDA_FILE_FORMAT )
 FORCE = TRUE;
 ``` 
+
+
+#### Data Storage Structures
+
+- Presentation layer
+- Data storage layer (eg. author, subject, title)
+  - ERDs - entity relationship drawings
+  - Normalized Relational Database Model
+    - Different entities stored in separate tables
+    - Same info not repeated
+    - Unique IDs for each row
+
+#### Sequences in Snowflakes 
+
+Similar to auto-incrementing, primary keys (counters).  Created in the `Sequences` tab of Database menu.  Need to set:
+- Initial value
+- Interval (of increment)
+
+#### Semi-Structured Data 
+- JSON: Lightweight text-based transport and storage format for data. Easy to read and write for both man and machine.  Built of either objects (key:value pairs surrounded by curly braces) or an ordered list of values (array).
+- XML: markup language that defines a structural set of rules for human/machine readable documents.  Is transportable and extensible, but more verbose and redudant than other text-based data transport formats (e.g. JSON)
+- Parquet: column based, predicate push down, up to 87% data storage savings vs CSV, 99% less data scanned, 34x faster queries.  Dictionary encoding, bit packing and RLE (run length encoding).  Reading is faster that writing, updating data is slow.
+- Avro: Data serialization system with rich data structures; compact/fast binary format; schema resolution; row based
+- ORC: columnar storage format with compression, fast read/write, predicate pushdown, both compressed/uncompressed storage available
+  
+  
