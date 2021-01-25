@@ -66,3 +66,48 @@
 
 Requirements should be: necessary, concise, unambiguous, consisten, complete, implementable, testable, traceable, identifiable.
 
+## Design
+
+When designing a set of guidelines to engineer quality software some ways to ensure maintainability and reliability are:
+- Abstraction (reducing details, ignoring irrelevant, focusing on important aspects)
+- Encapsulation (hiding complexity and internals, separating implementation from interface and hiding details unnecessary for the end user)
+- Modularization (Breaking the problem into smaller component pieces)
+
+## Testing
+
+- Unit testing: Tests a particular mdodule to see if it meets its design spec (done by dev)
+- Integration testing: Tests whether integrated module(s) meet the high level design spec (done by dev team/test team)
+- System testing: Tests the system for functional and non-functional requirements (done by test team)
+- Acceptance testing: Tests whether software meets end-user requirements (customer)
+
+Bottoms up testing: Unit B calls sub units D and E.
+Top-down testing: Unit F (Stub) responds to unit C.
+
+Non-functional testing breaks down into:
+- Performance testing
+  - Load testing (identify max operating capacity)
+  - Endurance testing (determine if system can sustain continous expected load and detect mem leaks)
+  - Stress testing (determine system stability, breaking point and safe usage limits)
+  - Spike testing (determine system ability to endure dramatic surges in load)
+  
+
+---
+
+### Agile 
+
+1. Priority one, delight the customer through early and continuous delivery of valuable software
+2. Welcome change, even at late stages, using Agile processes to provide to the customer's competitive advantage.
+3. Continously deliver working software, every few weeks to few months, with preference to the former timeline.
+4. Developers and Business must work together daily, throughout the project, to improve success.
+5. The most efficient and effective method of conveyuing information to and within a development team is a face-to-face conversation.
+6. Build projects around motivated individuals.  Give them the environment and support they need and trust them to get the job done.
+7. Working software is the primary measure of progress.
+8. Agile processes promote sustainable development.  The sponsors, developers and users should be able to maintain a constant pace indefinitely.
+9. Continuous attention to technical excellence and good design enchances agility.
+10. The best architectures, requirements and designs emerge from self-organizing teams.
+11. At regular intervals, the teams reflects on how to become more effective, then tunes and adjusts its behavior accordingly
+
+- Security testing
+- Reliability testing
+- Usability testing
+
