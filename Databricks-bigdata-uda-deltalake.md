@@ -1,10 +1,21 @@
 
-
 #### What is a Data warehouse?
+
+A data warehouse is a data management system designed to be a "single source of truth" for business intelligence (BI) activities like analytics.  They are usually build by deriving data from multiple sources.  They hold data that is meant to be queried upon and often contain large amounts of historical data.  The centralization and consolidation of data from multiple resources allows organizations to extract valuable business insights to improve decision making.  Some benefits of using a data warehouse include:
+- Extracting insights to make better decisions
+- Bringing together data from multiple sources and conforming them to the desired structure
+- Being able query over and analyze large amounts of historical data
+- By using ETL processes we can ensure that the data is consistent, accurate and of high quality (aka "Golden records")
+- Disconnects analytical processing with the storage to improve performance.
+- Schema can be implicitly or explicitly implemented.  If defined prior to ingestion, it is schema-on-write.  At the time of analysis, or reading, it is schema-on-read.
 
 #### What is a Data lake?
 
+A data lake a repository for all types of data (structured, semi-structured and unstructured data) at any scale.  Data is stored as-is and can be in a raw state, and as opposed to hiearchial structure of a warehouse (folders, files) data lakes store data in a flat architecture where data is given a unique identifier/meta data and often stored as objects (S3/Azure blob).  Cloud storage options are cheap, but the raw nature makes Data lake data harder to work with.  Querying over structureless data can take longer.  
+
 #### What is a Data lakehouse?
+
+
 
 #### What is a Unified Data Platform?
 
@@ -17,6 +28,8 @@
 #### What is Data Science?
 
 #### What is the role of: Data engineers, Data Scientists, Data analysts and Platform administrators?
+
+Data Engineers develops, tests and maintains system for data systems (data pipelines) to improve data quality, efficiency and reliability.  They provide the data in ready to use form for the data scientist.  The data scientist writes machine learning algorithms, and statistical methods to develop the predictive model to answer business needs.  Data scientists test and track ML models using python, R, SQL and ML libraries. Business analysts generate different types of records, using sql, Tableau, PowerBI, looker to extract insights and to make informed business decisions.  Platform administrators setup the infrastructure, updates and maintains the software, does health checks, implements best practices and monitors usage.
 
 #### What are the advantages of Big Data Analytics for Business?
 
