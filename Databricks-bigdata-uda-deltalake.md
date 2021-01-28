@@ -62,6 +62,8 @@ Data Engineers develops, tests and maintains system for data systems (data pipel
 
 #### What is BI Integration?
 
+Provides integrations to easily connect popular BI tools such as Power BI, tableau, QlikQ, looker, TIBCO, SQL Workbench/J to Databricks clusters and SQL endpoints.  This allows the BI tools to use the power Databricks to analyse their data and prepare reports and visualzaiotns.
+
 #### What is Enterprise Cloud Service?
 
 #### What parts make up a Delta Lake Lakehouse?
@@ -72,8 +74,18 @@ Data Engineers develops, tests and maintains system for data systems (data pipel
 
 #### What is OLTP?  What is OLAP?  
 
+OLTP or Online Transaction Processing is a category of data processing that focuses on tasks like inserting, updating or deleting small amounts of data (large volume, simple transactions).  Generally needs to handle high volume, and multiple simultaneous users and uses ACID transactions to record events and can be required to operate on a continuous basis (24/7/365).  OLTP workloads are write intensive, but generally don't need that much storage space, but they do need constant (or concurrent) backups.
+
+OLAP or Online Analytics Processing is the performance of complex data analysis, designed by data scientists and business analysts to support data mining, analysis and other DSSs.  OLAP require multidimensional databases, that can handle complex queries, involving large amounts of records.  OLAP processing is orders of magnitude slower and updates to data are low or none.  OLAP workloads are read intensive.  OLAP have significant storage requirements, and need backups less frequently
+
 #### What is an ODS?  What is EDSS Stand for?
 
+An ODS, or Operation Datastore, is a centralized storage database that aggregates transactional data from one or more data sources that are doing transactional processing and consolidates, performs munging or ETL to prepare that data to be used in conjunction with BI tools to aid in tactical Decision making.  It provides an alternative to a DSS which is connected directly to the data sources that are performing transaction processing.  An ODS performs OLTP.
+
+And EDSS stands for a Enterprise Decision Support System, and contains all versions of data and a history of all transactions.  They can be on-premise or in the cloud, leveraging data lake, data warehouse or data lakehouse technology.  An EDSS performas OLAP.
+
 #### What does SSOT stand for?
+
+The Single Source of Truth is a practice in the design and implementation of Information systems so that everybody accessing data, code, configuration or other assets are all accessing the same resource.   Rather than storing duplicated data, in multiple siloed repositories, we make sure they are all the same.  When we duplicate data, we increase the chance of errors and inconsistencies in data.
 
 #### What are the 3 pillars of Delta Lake?
