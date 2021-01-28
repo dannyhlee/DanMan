@@ -26,20 +26,31 @@ Delta lake decouples compute and storage, and provides scalability and availabil
 Unified Data brings together data from disparate sources, cleans and transforms it into a format that can be analysed to extract analytical data.  These platforms provide fast data ingestion, real-time streaming analytics, historical analytics, predictive analytics, and prescriptive analytics.    The uniformed data platform is capable of moving data throughout an organization, regardless of volume, velocity or variety of data types, by ingesting from internal and external sources, enriching, munging, and/or transforming the data, making it available to consumers, and then persisting it in storage.
 
 #### What is Artificial Intelligence?
-
-
+AI encompasses the entire realm of what it means for "machiens that respond to stimulation consistent with traditional responses from humans, given the human capacity for contemplation, judgment, and intention.” Researchers Shubhendu and Vijay described AI as software systems that “make decisions which normally require [a] human level of expertise”. John Allen and Darrell West argued AI systems have three qualities that define them: intentionality, intelligence, and adaptability.  An example is the Turing test.
 
 #### What is Machine Learning?
+A subset of AI, that includes that includes applications and algorithms that learns on its own, when given enough data, will retrain itself to be more accurate.  It works well with structured data and recognizes patterns.  Predicts the likelihood of something being or not being.  ML is also a method of data analysis based in automated, self-teaching by developing analytics models that can identify patterns and make decisions.  The models accuracy is verified by humans.
 
 #### What is Deep Learning?
 
+A subset of ML, made up of applications that teach themselves to perform a task with increasing accuracy without human interaction.  Uses neural networks (sets of algorithms modelled on the human brain).  
+
 #### What is Data Science?
+
+Data Science brings together the fields of math, statistics and business and uses tools and workflows to (process, manage and analyze) data to extract insights that inform business decisions.   The workflow consists of:
+- Identifying the business need
+- Ingestion of data (as a stream or batch, often raw and messy)
+- Munge the data (cleanse it and make it safe)
+- Data Analysis
+- Sharing the insights gleaned from data through visual dashboards, presentations, emails, etc.
 
 #### What is the role of: Data engineers, Data Scientists, Data analysts and Platform administrators?
 
 Data Engineers develops, tests and maintains system for data systems (data pipelines) to improve data quality, efficiency and reliability.  They provide the data in ready to use form for the data scientist.  The data scientist writes machine learning algorithms, and statistical methods to develop the predictive model to answer business needs.  Data scientists test and track ML models using python, R, SQL and ML libraries. Business analysts generate different types of records, using sql, Tableau, PowerBI, looker to extract insights and to make informed business decisions.  Platform administrators setup the infrastructure, updates and maintains the software, does health checks, implements best practices and monitors usage.
 
 #### What are the advantages of Big Data Analytics for Business?
+
+
 
 #### What are some challenges when it comes to building big data analytics for business?
 
