@@ -14,12 +14,20 @@ A data warehouse is a data management system designed to be a "single source of 
 A data lake a repository for all types of data (structured, semi-structured and unstructured data) at any scale.  Data is stored as-is and can be in a raw state, and as opposed to hiearchial structure of a warehouse (folders, files) data lakes store data in a flat architecture where data is given a unique identifier/meta data and often stored as objects (S3/Azure blob).  Cloud storage options are cheap, but the raw nature makes Data lake data harder to work with.  Querying over structureless data can take longer.  
 
 #### What is a Data lakehouse?
+Data lakehouse is a new design proposed by Databricks to bridge the gaps between data warehouses and data lakes.  Provides storage on low-cost cloud storage used for data lakes, but provides Transactional ACID support, Schema enforcement and governance, BI Support, support for a wide variety of data type and workloads, along with support for streaming and batch processing.
 
+Delta lake decouples compute and storage, and provides scalability and availability.  Its a performant and reliable, ACID compliant, with optimizations that make DL best in class solution for object storage in the cloud.
 
+![warehouse vs lake vs lakehouse](https://databricks.com/wp-content/uploads/2020/01/data-lakehouse.png)
+(Image hosted at https://databricks.com/glossary/data-lakehouse)
 
 #### What is a Unified Data Platform?
 
+Unified Data brings together data from disparate sources, cleans and transforms it into a format that can be analysed to extract analytical data.  These platforms provide fast data ingestion, real-time streaming analytics, historical analytics, predictive analytics, and prescriptive analytics.    The uniformed data platform is capable of moving data throughout an organization, regardless of volume, velocity or variety of data types, by ingesting from internal and external sources, enriching, munging, and/or transforming the data, making it available to consumers, and then persisting it in storage.
+
 #### What is Artificial Intelligence?
+
+
 
 #### What is Machine Learning?
 
