@@ -10,8 +10,8 @@ The Designer contains tools to analyze sources, design target schemas and build 
 - **Source Analyzer** - imports/creates source definitions.
 - **Target Designer** - Import/create target definitions.
 - **Transformation Developer** - Develop transformations for use in mappings, user-definied functions can also be used in expressions.
-- ** Mapplet Designer** - Create sets of transformations to use in mappings
-- ** Mapping Designer** - Create mappings that the Itegration Service uses to ETL data.
+- **Mapplet Designer** - Create sets of transformations to use in mappings
+- **Mapping Designer** - Create mappings that the Itegration Service uses to ETL data.
 
 #### What is the Integration service?
 The Integration service reads workflow information from the repository and runs workflow tasks.  The info the Integration services retrieves includes metadata that tells the Integration service when and how to run ETL tasks.  The Integration service handles the reading of data into a session and writing of transformed data to mapping targets.  THe Integration service can read and write to different platforms and target types.
