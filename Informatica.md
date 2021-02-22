@@ -19,7 +19,7 @@ The Integration service reads workflow information from the repository and runs 
 #### What is a Session?
 A session includes instructions on how to extract data from sources, transform the data and load the data into mapping targets.
 
-#### WHat is a workflow? 
+#### What is a workflow? 
 A workflow is a set of instructions that tells an Integration Service how to run tasks.
 
 #### What is the PowerCenter Workflow Monitor?
@@ -134,7 +134,7 @@ Native transformations are provider by Designer.  Non-native are created using t
 #### Sequence generator
 (passive, connected, native) Generates primary keys
 
-### Stored procedure
+#### Stored procedure
 (passive, connected or unconnected, native) Calls a stored procedure
 
 https://www.guru99.com/informatica-interview-questions.html
