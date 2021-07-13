@@ -1,6 +1,61 @@
 # Big Data and AI Compendium
 
-### Cloud / Hybrid storage / Containers
+### Cloud / Hybrid storage
+  - Amazon S3
+  - Google Cloud Storage
+  - Azure Storage
+  - IBM Storage
+
+### Containers
+  #### Providers
+    - Amazon EKS
+    - Google Cloud
+    - Azure Container Service (AKS)
+    - Cisco Container Platform (CCP)
+  #### Frameworks
+    - RedHat
+    - SUSE
+    - VMWare - vSPhere
+    - Mesosphere
+    - Docker
+    - Rancher
+    - Ballerina
+    - Cloud FOundary
+  #### Monitoring
+    - Datadog
+    - Sumologic
+    - New Relic
+    - AppDynamics
+    - Buoyant
+    - Turbonomic
+    - Grafana
+    - Instana
+    - Dyantrace
+    - Prometheus
+    - Fluentd
+  #### Management
+    - Spotinst MCS
+    - DigitalOcean
+    - Giant Swarm
+    - Kublr
+    - Envoy
+  #### Load Balancing
+    - AVI Networks
+    - HAProxy
+    - Nginx
+  #### Security
+    - Aqua
+    - Black duck 
+    - Cilium
+    - Twistlock
+    - Alcide
+  #### Tools
+    - Jfrog
+    - CloudBees
+    - Univa
+    - Bitnami
+    - Aspen mesh
+    - GitLab
 ### Data warehouse
 ### Data lake
 ### SQL Databases
