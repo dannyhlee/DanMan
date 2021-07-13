@@ -42,8 +42,8 @@
       - Flink: Unified stream and batch processing framework written in java aand scala.  Executes dataflow programs in data-parallel, iterative and pipelined manner. High-throughput, low-latency streaming engine, event-time processing and state management.  Supports exactly-once, java, scala, python and sql. (rel 5/2011, lr, 5/28/2021) - https://flink.apache.org/
       - Cassandra: Open source, NoSQL distributed database trusted for scalability and high availability, without compromising performance.  Linear scalability and fault-tolerant on commodity hardware.  (rel 72008, lr. 2/1/2021) - https://cassandra.apache.org/
       - Geode: In-memory data management platform and distributed data container, which pools resources (memory, CPU, network and opt. disk) to manage them and provide dynamic replication, data partitioning to implement high availbility, performance, scalability, fault-tollerance, rolling-upgrade support, atomic transactions (executed on a single node and distributed afterwards), LRU eviction/expiration.
-      - Ignite
-      - Kylin
+      - Ignite: Distributed Database for high performance computing with in-memory speed, co-located compute/tasks (java, scala, kotlin, c#, c++), optional distributed ACID, built-in ML tools and integrations, Continuous queries (replacing triggers) (rel- 3/24/2015, lr: 3/15/2021)
+      - Kylin: MOLAP engine with SQL interface.  OLAP data warehouse with billion row query at sub-second latency with identification of star/snowflake schemas on Hadoop, cube building (aggregated data) and access via Open DataBase Connectivvity (ODBC)/JDBC/RESTful API).  Connects Hadoop to BI tools (Tableau, PowerBI/Excel, MSTR, QlikSense, Hue and Superset). (rel: 6/10/2015, lr: 9/13/2020)
       - Lens
     - web: https://zeppelin.apache.org/
     - repo: https://github.com/apache/zeppelin
