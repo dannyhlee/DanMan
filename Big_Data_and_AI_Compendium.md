@@ -44,7 +44,7 @@
       - Geode: In-memory data management platform and distributed data container, which pools resources (memory, CPU, network and opt. disk) to manage them and provide dynamic replication, data partitioning to implement high availbility, performance, scalability, fault-tollerance, rolling-upgrade support, atomic transactions (executed on a single node and distributed afterwards), LRU eviction/expiration.
       - Ignite: Distributed Database for high performance computing with in-memory speed, co-located compute/tasks (java, scala, kotlin, c#, c++), optional distributed ACID, built-in ML tools and integrations, Continuous queries (replacing triggers) (rel- 3/24/2015, lr: 3/15/2021)
       - Kylin: MOLAP engine with SQL interface.  OLAP data warehouse with billion row query at sub-second latency with identification of star/snowflake schemas on Hadoop, cube building (aggregated data) and access via Open DataBase Connectivvity (ODBC)/JDBC/RESTful API).  Connects Hadoop to BI tools (Tableau, PowerBI/Excel, MSTR, QlikSense, Hue and Superset). (rel: 6/10/2015, lr: 9/13/2020)
-      - Lens
+      - Lens (retired): Unified analytics interface across multiple tiered data stores.  
     - web: https://zeppelin.apache.org/
     - repo: https://github.com/apache/zeppelin
     - twitter: https://twitter.com/ApacheZeppelin
