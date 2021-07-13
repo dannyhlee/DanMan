@@ -5,11 +5,14 @@
 ### Data lake
 ### SQL Databases
 ### NoSQL Databases
+  - DataStax: Multi-cloud DBaaS built on Cassandra, and multi-cloud Streaming-as-a-Service built on Pulsar. (Founded 3/31/2010, lf: Venture, May 2021)
+  - 
 ### Graph Databases
 ### Data Observability / Data Ops / ML Ops / Lineage
-  - Monte Carlo: No-code integration to identify data issues (freshness/recency, volume, schema, distribution of duplicates and nulls, lineage to understand how data evolves), assess impact and alert teams. (Founded 2019, lf: Series B) https://www.montecarlodata.com/
+  - Monte Carlo: No-code integration to identify data issues (freshness/recency, volume, schema, distribution of duplicates and nulls, lineage to understand how data evolves), assess impact and alert teams. (Founded 2019, lf: Series B, Feb 2021) https://www.montecarlodata.com/
 ### Stream-processing / Pub-Sub / Messaging 
 ### Data Ingestion / Data Wrangling / ETL / ELT
+  - Trifacta: Open, interoperable, low-code/no-code visualized data preparation, transformation and ingestion.  GDPR/SOC2 Type II/CCPA Compliant. (Founded 2012, lf: Series E, Sept 2019) https://www.trifacta.com/
 ### Labeling / Annotation
 ### Monitoring / Security
 ### BI / Visualizations
