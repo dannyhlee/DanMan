@@ -1,10 +1,39 @@
 # Big Data and AI Compendium
 
+### Definitions
+- Exabyte: 1000 PB / 1 Million TB / 1 Billion GB 
+- Petabyte: 1000 TB / 1 Million GB / 1 Billion MB
+
 ### Cloud / Hybrid storage
-  - Amazon S3
+  - Amazon AWS
+    - S3: Simple Storage Service. Object storage.  Industry-leading performance, scalability, availability and durability. - https://aws.amazon.com/s3
+    - EFS: Elastic File System.  Cloud-native, elastic, scalable, serverless, fully managed POSIX-compliant file system.  - https://aws.amazon.com/efs
+    - EBS: Elastic Block Store.  High performance, block-storage for use with EC2 (Elastic Computer Cloud). - https://aws.amazon.com/ebs/
+    - Backup and Glacier: Low cost. - https://aws.amazon.com/backup/
+    - DataSync: Online data transfer automation -https://aws.amazon.com/datasync
+    - Storage Gateway: On-premises, hybrid cloud services providing access to virtually unlimited cloud storage - https://aws.amazon.com/storagegateway
+    - Snow Family: Physical devices to migrate data into and out of AWS.  Also Edge computing services and storage - https://aws.amazon.com/snow
   - Google Cloud Storage
+    - Cloud Storage: Object storage - https://cloud.google.com/storage
+    - Block Storage: Persistent and local (ephemeral) ssd. Integrated with Compute Engine and GKE (Google Kubernetes Engine) - https://cloud.google.com/persistent-disk
+    - FileStore: File storage, easily mountable to Compute Engine VMs - https://cloud.google.com/filestore
+    - Archival Storage: Low cost. - https://cloud.google.com/storage
+    - Storage Transfer Service: Secure, low-cost services to transfer data to the cloud or on-premises - https://cloud.google.com/storage-transfer-service
   - Azure Storage
+    - Azure Disks: Block-level storage volumes for Azure VMs - https://azure.microsoft.com/en-us/services/storage/disks/
+    - Azure Blobs: Massively scalable object store, support for Data Lake Storage Gen2 - https://azure.microsoft.com/en-us/services/storage/blobs/
+    - Azure Data Lake Storage: Massively scalable, secure data lake for high-performance analytics workloads - https://azure.microsoft.com/en-us/services/storage/data-lake-storage/
+    - Azure Files: Managed file shares for cloud or on-premises deployment - https://azure.microsoft.com/en-us/services/storage/files/
+    - Azure NetApp Files: Enterprise file storage, powered by NetApp - https://azure.microsoft.com/en-us/services/netapp/
+      - NetApp: Hybrid cloud data services and data management company - https://www.netapp.com/
+    - Azure Data Box: Appliances and solutions for offline data transfer to Azure - https://azure.microsoft.com/en-us/services/databox/
+    - MS Azure Confidential Ledger: Store unstructured data, completely tamper-proof and can be cryptographically verified - https://azure.microsoft.com/en-us/services/azure-confidential-ledger/
   - IBM Storage
+    - IBM Cloud Object Storage: Flexible, cost-effective, scalable storage for unstructured data - https://www.ibm.com/cloud/object-storage
+    - IBM Cloud Backup: Fully encrypted backup and recovery across multiple datacenters - https://www.ibm.com/cloud/backup
+    - IBM Cloud Block Storage: The lowest latency, highest redundancy data storage option - https://www.ibm.com/cloud/block-storage
+    - IBM Cloud File Storage: The simplest solution for data organized into files and folders - https://www.ibm.com/cloud/file-storage
+    - IBM Cloud Mass Data Migration: Secure hardware to physically ship petabytes of data to IBM Cloud - https://www.ibm.com/cloud/mass-data-migration
 
 ### Containers
   #### Providers
