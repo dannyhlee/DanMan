@@ -35,57 +35,18 @@
     - IBM Cloud File Storage: The simplest solution for data organized into files and folders - https://www.ibm.com/cloud/file-storage
     - IBM Cloud Mass Data Migration: Secure hardware to physically ship petabytes of data to IBM Cloud - https://www.ibm.com/cloud/mass-data-migration
 
-### Containers
-  #### Providers
-    - Amazon EKS
-    - Google Cloud
-    - Azure Container Service (AKS)
-    - Cisco Container Platform (CCP)
-  #### Frameworks
-    - RedHat
-    - SUSE
-    - VMWare - vSPhere
-    - Mesosphere
-    - Docker
-    - Rancher
-    - Ballerina
-    - Cloud FOundary
-  #### Monitoring
-    - Datadog
-    - Sumologic
-    - New Relic
-    - AppDynamics
-    - Buoyant
-    - Turbonomic
-    - Grafana
-    - Instana
-    - Dyantrace
-    - Prometheus
-    - Fluentd
-  #### Management
-    - Spotinst MCS
-    - DigitalOcean
-    - Giant Swarm
-    - Kublr
-    - Envoy
-  #### Load Balancing
-    - AVI Networks
-    - HAProxy
-    - Nginx
-  #### Security
-    - Aqua
-    - Black duck 
-    - Cilium
-    - Twistlock
-    - Alcide
-  #### Tools
-    - Jfrog
-    - CloudBees
-    - Univa
-    - Bitnami
-    - Aspen mesh
-    - GitLab
 ### Data warehouse
+  - Amazon Redshift: Integrated with AWS ecosystem, high performance, with AQUA (Advanced Query Accelerator, Petabyte-scale warehousing and analytics, secure and compliant (SOC1, SOC2, SOC3, PCI DSS Lvl 1)
+  - Google BigQuery: Petabyte scale, serverless, ML built-in, BigQuery Omni allows access to multi-clouds (AWS and Azure) using standard SQL, BI Engine and integration with Google Data Studio, Looker. - https://cloud.google.com/bigquery
+    -  BigQuery ML: Create and execute ML models using standard SQL queries via GC console, bq CLI, REST API, or external notebooks - https://cloud.google.com/bigquery-ml/docs/
+    -  BigQuery Omni: Query AWS and Azure from BigQuery UI using standard SQL, powered by Anthos. - https://cloud.google.com/blog/products/data-analytics/introducing-bigquery-omni
+      -  Anthos clusters: Enterprise-grade conformant kubernetes services across hybrid and multi-cloud environments. - https://cloud.google.com/anthos/clusters
+    -  BigQuery BI Engine - https://cloud.google.com/bi-engine/docs
+    -  Google Data Studio - https://analytics.google.com/analytics/academy/course/10
+    -  Google Looker - Cloud based BI/Analytics platform.  Unified metrics, permissioning, version-control, security, cloud and best-in-class APIs.  Multicloud, abstraction of underlying data complexity to operationalize BI for everyone, rapid time to value and leading-edge AI/ML and advanced analytics.
+  - Microsoft Azure Synapse Analytics: Unified analytics platform, serverless/dedicated options, enterprise data warehouse, integrated with Spark and SQL engines (T-SQL), code-free visual ETL/ELT ingestion connectors, Cloud-native HTAP (Hybrid Transactional/Analtyical Processing), Integrated AI/BI with Azure ML, Azure Cognitive Services and Power BI.  Languages: T-SQL, Python, Scala, Spark SQL and .Net. - https://azure.microsoft.com/en-us/services/synapse-analytics
+  - 
+                
 ### Data lake
 ### SQL Databases
 ### NoSQL Databases
@@ -139,3 +100,53 @@
 ### ML / NLP / Neural Network
 ### Search Engine
 ### Data Governance / Regulatory Compliance
+### Containers
+  #### Providers
+    - Amazon EKS
+    - Google Cloud
+    - Azure Container Service (AKS)
+    - Cisco Container Platform (CCP)
+  #### Frameworks
+    - RedHat
+    - SUSE
+    - VMWare - vSPhere
+    - Mesosphere
+    - Docker
+    - Rancher
+    - Ballerina
+    - Cloud FOundary
+  #### Monitoring
+    - Datadog
+    - Sumologic
+    - New Relic
+    - AppDynamics
+    - Buoyant
+    - Turbonomic
+    - Grafana
+    - Instana
+    - Dyantrace
+    - Prometheus
+    - Fluentd
+  #### Management
+    - Spotinst MCS
+    - DigitalOcean
+    - Giant Swarm
+    - Kublr
+    - Envoy
+  #### Load Balancing
+    - AVI Networks
+    - HAProxy
+    - Nginx
+  #### Security
+    - Aqua
+    - Black duck 
+    - Cilium
+    - Twistlock
+    - Alcide
+  #### Tools
+    - Jfrog
+    - CloudBees
+    - Univa
+    - Bitnami
+    - Aspen mesh
+    - GitLab
