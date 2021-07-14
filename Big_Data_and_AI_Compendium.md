@@ -1,9 +1,5 @@
 # Big Data and AI Compendium
 
-### Definitions
-- Exabyte: 1000 PB / 1 Million TB / 1 Billion GB 
-- Petabyte: 1000 TB / 1 Million GB / 1 Billion MB
-
 ### Cloud / Hybrid storage
   - Amazon AWS
     - S3: Simple Storage Service. Object storage.  Industry-leading performance, scalability, availability and durability. - https://aws.amazon.com/s3
@@ -154,3 +150,8 @@
     - Bitnami
     - Aspen mesh
     - GitLab
+    
+
+### Definitions
+- Exabyte: 1000 PB / 1 Million TB / 1 Billion GB 
+- Petabyte: 1000 TB / 1 Million GB / 1 Billion MB
