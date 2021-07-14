@@ -41,7 +41,6 @@
     -  Google Data Studio - https://analytics.google.com/analytics/academy/course/10
     -  Google Looker - Cloud based BI/Analytics platform.  Unified metrics, permissioning, version-control, security, cloud and best-in-class APIs.  Multicloud, abstraction of underlying data complexity to operationalize BI for everyone, rapid time to value and leading-edge AI/ML and advanced analytics.
   - Microsoft Azure Synapse Analytics: Unified analytics platform, serverless/dedicated options, enterprise data warehouse, integrated with Spark and SQL engines (T-SQL), code-free visual ETL/ELT ingestion connectors, Cloud-native HTAP (Hybrid Transactional/Analtyical Processing), Integrated AI/BI with Azure ML, Azure Cognitive Services and Power BI.  Languages: T-SQL, Python, Scala, Spark SQL and .Net. - https://azure.microsoft.com/en-us/services/synapse-analytics
-  - 
                 
 ### Data lake
 ### SQL Databases
