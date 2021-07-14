@@ -59,6 +59,10 @@
 ### Data Ingestion / Data Wrangling / ETL / ELT
   - Trifacta: Open, interoperable, low-code/no-code visualized data preparation, transformation and ingestion.  GDPR/SOC2 Type II/CCPA Compliant. (Founded 2012, lf: Series E, Sept 2019) https://www.trifacta.com/
 ### Labeling / Annotation
+  - Labelbox: Configurable platform to enable teams to create and manage ML training data.  Used to annotate data, manage p&p (people and processes) and iterate. - https://labelbox.com/
+  - Hive: Data labelling, model building and complete end-to-end solutions.  https://thehive.ai/
+  - Google Vertex Labeling: Request human labelers - https://cloud.google.com/vertex-ai/docs/datasets/data-labeling-job
+  - Amazon SageMaker Ground Truth - offers access to public and private human labelers - https://aws.amazon.com/sagemaker/groundtruth/
 ### Monitoring / Security
 ### BI / Visualizations
 ### Notebooks
