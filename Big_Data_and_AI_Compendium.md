@@ -53,6 +53,7 @@
 ### Stream-processing / Pub-Sub / Messaging 
 ### Data Ingestion / Data Wrangling / ETL / ELT
   - Trifacta: Open, interoperable, low-code/no-code visualized data preparation, transformation and ingestion.  GDPR/SOC2 Type II/CCPA Compliant. (Founded 2012, lf: Series E, Sept 2019) https://www.trifacta.com/
+  - Amazon Glue: Serverless data integration service.  Data discovery and ETL via visual and code-based interfaces.  (Preview) Elastic views to combine and replicate data across multiple data stores using SQL. - https://aws.amazon.com/glue/
 ### Labeling / Annotation
   - Labelbox: Configurable platform to enable teams to create and manage ML training data.  Used to annotate data, manage p&p (people and processes) and iterate. - https://labelbox.com/
   - Hive: Data labelling, model building and complete end-to-end solutions.  https://thehive.ai/
