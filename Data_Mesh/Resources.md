@@ -93,7 +93,6 @@ Yotpo A1
   - Freshness: Structured streaming/flink/CDC and hudi
   - Stability: message broikers/kafka and orchestration plafroms like k8
   - CDC: Debezium
-  - 
 Zalando V1 V2 V3 V4 V5
 Zenseact S1
   - Data plane: Real-time data sources, enterprise applications, OEM cloud/IoT, cloud applications
