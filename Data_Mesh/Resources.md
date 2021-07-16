@@ -103,10 +103,42 @@
 ### Gloo A1 A2
 ### HelloFresh V1
 ### If Insurance / If P&C A1 A2
+  - EDW on Teradata
+  - DW on Google Bigquery
+  - BI - Tableau
+  - Data product owner
+    - Clear vision and roadmap for the data product i own
+    - Ensure product is discoverable, highly usable, legally compliant and good quality
+    - Consider data product an important asset for whole company.  I promote and evangelise it
+    - I collect and prioritise data dev tasks 
+    - I have a good understanding of the data and how it is access and used
+  - Databricks - analytics accelerator
+    - Supports the most popular analytics programming languages and libraries
+    - Data engineers build batch and streaming data pipelines using Spark
+    - Data analysts explore data and produce dashboards
+    - Data scientists build feature marts, train models and control ML lifecycle using MLFlow
+  - Tableau, Power BI -> Raw data, cleaned data, standard reports, ad hoc reports
+  - Databricks -> Data exploration, predictive modelling, prescriptive analytics
+  - Blueprint:
+    - Infrastructure - blue prints, data catalog
+    - Security - key vault
+    - Network
+    - Policies - slo/sli/monitoring
+    - Access - users and groups
+    - Standards
+    - Templates
+    - Onboarding - training, review loop
 ### Intuit V1 A1
 ### JPMorgan Chase A1 V1 (meetup July 8th)
 ### Kolibri Games V1
 ### Medtronic V1
+  - Data streams
+    - SQL db
+    - Graph db
+    - Object storage
+    - Memory DB
+    - Scale out NoSQL db
+  - Data streams ==> Data catalog ==> Data policy ==> Data views/Obfuscation ==> SQL ==> Data Consumers
 ### Northern Trust V1
   - CQRS for operational systems
     - realtime, ubiquitous, distributed data architecture achived through DDD
