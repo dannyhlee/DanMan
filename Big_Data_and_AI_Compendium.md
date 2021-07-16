@@ -1,7 +1,7 @@
 # Big Data and AI Compendium
 
-### Cloud / Hybrid storage
-  - Amazon AWS
+## Cloud / Hybrid storage
+  - **Amazon AWS**
     - S3: Simple Storage Service. Object storage.  Industry-leading performance, scalability, availability and durability. - https://aws.amazon.com/s3
     - EFS: Elastic File System.  Cloud-native, elastic, scalable, serverless, fully managed POSIX-compliant file system.  - https://aws.amazon.com/efs
     - EBS: Elastic Block Store.  High performance, block-storage for use with EC2 (Elastic Computer Cloud). - https://aws.amazon.com/ebs/
@@ -9,13 +9,13 @@
     - DataSync: Online data transfer automation -https://aws.amazon.com/datasync
     - Storage Gateway: On-premises, hybrid cloud services providing access to virtually unlimited cloud storage - https://aws.amazon.com/storagegateway
     - Snow Family: Physical devices to migrate data into and out of AWS.  Also Edge computing services and storage - https://aws.amazon.com/snow
-  - Google Cloud Storage
+  - **Google Cloud Storage**
     - Cloud Storage: Object storage - https://cloud.google.com/storage
     - Block Storage: Persistent and local (ephemeral) ssd. Integrated with Compute Engine and GKE (Google Kubernetes Engine) - https://cloud.google.com/persistent-disk
     - FileStore: File storage, easily mountable to Compute Engine VMs - https://cloud.google.com/filestore
     - Archival Storage: Low cost. - https://cloud.google.com/storage
     - Storage Transfer Service: Secure, low-cost services to transfer data to the cloud or on-premises - https://cloud.google.com/storage-transfer-service
-  - Azure Storage
+  - **Azure Storage**
     - Azure Disks: Block-level storage volumes for Azure VMs - https://azure.microsoft.com/en-us/services/storage/disks/
     - Azure Blobs: Massively scalable object store, support for Data Lake Storage Gen2 - https://azure.microsoft.com/en-us/services/storage/blobs/
     - Azure Data Lake Storage: Massively scalable, secure data lake for high-performance analytics workloads - https://azure.microsoft.com/en-us/services/storage/data-lake-storage/
@@ -24,14 +24,14 @@
       - NetApp: Hybrid cloud data services and data management company - https://www.netapp.com/
     - Azure Data Box: Appliances and solutions for offline data transfer to Azure - https://azure.microsoft.com/en-us/services/databox/
     - MS Azure Confidential Ledger: Store unstructured data, completely tamper-proof and can be cryptographically verified - https://azure.microsoft.com/en-us/services/azure-confidential-ledger/
-  - IBM Storage
+  - **IBM Storage**
     - IBM Cloud Object Storage: Flexible, cost-effective, scalable storage for unstructured data - https://www.ibm.com/cloud/object-storage
     - IBM Cloud Backup: Fully encrypted backup and recovery across multiple datacenters - https://www.ibm.com/cloud/backup
     - IBM Cloud Block Storage: The lowest latency, highest redundancy data storage option - https://www.ibm.com/cloud/block-storage
     - IBM Cloud File Storage: The simplest solution for data organized into files and folders - https://www.ibm.com/cloud/file-storage
     - IBM Cloud Mass Data Migration: Secure hardware to physically ship petabytes of data to IBM Cloud - https://www.ibm.com/cloud/mass-data-migration
 
-### Data warehouse
+## Data warehouse
   - Amazon Redshift: Integrated with AWS ecosystem, high performance, with AQUA (Advanced Query Accelerator, Petabyte-scale warehousing and analytics, secure and compliant (SOC1, SOC2, SOC3, PCI DSS Lvl 1)
   - Google BigQuery: Petabyte scale, serverless, ML built-in, BigQuery Omni allows access to multi-clouds (AWS and Azure) using standard SQL, BI Engine and integration with Google Data Studio, Looker. - https://cloud.google.com/bigquery
     -  BigQuery ML: Create and execute ML models using standard SQL queries via GC console, bq CLI, REST API, or external notebooks - https://cloud.google.com/bigquery-ml/docs/
@@ -42,17 +42,20 @@
     -  Google Looker - Cloud based BI/Analytics platform.  Unified metrics, permissioning, version-control, security, cloud and best-in-class APIs.  Multicloud, abstraction of underlying data complexity to operationalize BI for everyone, rapid time to value and leading-edge AI/ML and advanced analytics.
   - Microsoft Azure Synapse Analytics: Unified analytics platform, serverless/dedicated options, enterprise data warehouse, integrated with Spark and SQL engines (T-SQL), code-free visual ETL/ELT ingestion connectors, Cloud-native HTAP (Hybrid Transactional/Analtyical Processing), Integrated AI/BI with Azure ML, Azure Cognitive Services and Power BI.  Languages: T-SQL, Python, Scala, Spark SQL and .Net. - https://azure.microsoft.com/en-us/services/synapse-analytics
                 
-### Data lake
-### SQL Databases
-### NoSQL Databases
-  - DataStax: Multi-cloud DBaaS built on Cassandra, and multi-cloud Streaming-as-a-Service built on Pulsar. (Founded 3/31/2010, lf: Venture, May 2021)
-  - 
-### Graph Databases
+## Data lake
 
-### Data Observability / Data Ops / ML Ops / Lineage
+## SQL Databases
+
+## NoSQL Databases
+  - DataStax: Multi-cloud DBaaS built on Cassandra, and multi-cloud Streaming-as-a-Service built on Pulsar. (Founded 3/31/2010, lf: Venture, May 2021)
+ 
+
+## Graph Databases
+
+## Data Observability / Data Ops / ML Ops / Lineage
   - Monte Carlo: No-code integration to identify data issues (freshness/recency, volume, schema, distribution of duplicates and nulls, lineage to understand how data evolves), assess impact and alert teams. (Founded 2019, lf: Series B, Feb 2021) https://www.montecarlodata.com/
   - 
-### Stream-processing / Pub-Sub
+## Stream-processing / Pub-Sub
   - Amazon Kinesis: Collect, process and analyze video and data streams in real time.  Ingest Data Streams =>  Kinesis Data Analytics, Spark on EMR, EC2, AWS Lambda, custom apps. - https://aws.amazon.com/kinesis/
   - Spark Streaming
   - Kafka 
@@ -69,7 +72,7 @@
   - Pandio - Distributed messaging built on Apache Pulsar.  Serverless, reliable, performant, flexible deployments, managed, streams/queues and pub/sub.  Distributed SQL query engine. - https://pandio.com/
   - Apex (Apache): (Retired) Enterprise grade unified stream and batch processing engine.  Event-time windowing and high-level API.  https://attic.apache.org/projects/apex.html
   
- ### Messaging  Queue
+ ## Messaging  Queue
   - IBM MQ - Enterprise grade messaging,  https://www.ibm.com/products/mq
   - Amazon SQS - Simple Queue Service, fully managed MQ for microservices, distributed systems and serverless apps https://aws.amazon.com/sqs/
   - Amazon MQ - fully managed service OS message brokers using Apache Active MQ- https://aws.amazon.com/amazon-mq
@@ -79,24 +82,24 @@
   - ZeroMQ - Open source universal message library.  pub-sub/push-pull/client-server.  Async I/O, tiny library.  Multi-transport inproc, IPC, TCP, UDP, TIPC, multicast and WebSocket - https://zeromq.org/
   - MQTT - The standard of IoT messaging - https://mqtt.org/
 
-### Data Ingestion / Data Wrangling / ETL / ELT
+## Data Ingestion / Data Wrangling / ETL / ELT
   - Trifacta: Open, interoperable, low-code/no-code visualized data preparation, transformation and ingestion.  GDPR/SOC2 Type II/CCPA Compliant. (Founded 2012, lf: Series E, Sept 2019) https://www.trifacta.com/
   - Amazon Glue: Serverless data integration service.  Data discovery and ETL via visual and code-based interfaces.  (Preview) Elastic views to combine and replicate data across multiple data stores using SQL. - https://aws.amazon.com/glue/
   
-### Labeling / Annotation
+## Labeling / Annotation
   - Labelbox: Configurable platform to enable teams to create and manage ML training data.  Used to annotate data, manage p&p (people and processes) and iterate. - https://labelbox.com/
   - Hive: Data labelling, model building and complete end-to-end solutions.  https://thehive.ai/
   - Google Vertex Labeling: Request human labelers - https://cloud.google.com/vertex-ai/docs/datasets/data-labeling-job
   - Amazon SageMaker Ground Truth - offers access to public and private human labelers - https://aws.amazon.com/sagemaker/groundtruth/
 
 
-### Monitoring / Security
+## Monitoring / Security
 
 
-### BI / Visualizations
+## BI / Visualizations
 
 
-### Notebooks
+## Notebooks
   - Apache Zeppelin:  A web-based notebook enabling data-driven, interactive data analytics and collaborative documents. (incub. rel. 7/23/2015, 0.9.0 rel 12/26/2020) - https://zeppelin.apache.org/
     - Interpreters:
       - Spark: unified analytics engine for large-scale data processing - (rel. 5/26/2014, lr. 3/2/2021) - https://spark.apache.org/
@@ -134,22 +137,22 @@
     - twitter: https://twitter.com/ApacheZeppelin
 
 
-### ML / NLP / Neural Network
+## ML / NLP / Neural Network
 
 
-### Search Engine
+## Search Engine
 
 
-### Data Governance / Regulatory Compliance
+## Data Governance / Regulatory Compliance
 
 
-### Containers
-  #### Providers
+## Containers
+  -Providers
     - Amazon EKS
     - Google Cloud
     - Azure Container Service (AKS)
     - Cisco Container Platform (CCP)
-  #### Frameworks
+   - Frameworks
     - RedHat
     - SUSE
     - VMWare - vSPhere
@@ -158,7 +161,7 @@
     - Rancher
     - Ballerina
     - Cloud FOundary
-  #### Monitoring
+  - Monitoring
     - Datadog
     - Sumologic
     - New Relic
@@ -170,23 +173,23 @@
     - Dyantrace
     - Prometheus
     - Fluentd
-  #### Management
+  - Management
     - Spotinst MCS
     - DigitalOcean
     - Giant Swarm
     - Kublr
     - Envoy
-  #### Load Balancing
+  - Load Balancing
     - AVI Networks
     - HAProxy
     - Nginx
-  #### Security
+  - Security
     - Aqua
     - Black duck 
     - Cilium
     - Twistlock
     - Alcide
-  #### Tools
+  - Tools
     - Jfrog
     - CloudBees
     - Univa
@@ -195,6 +198,6 @@
     - GitLab
     
 
-### Definitions
+## Definitions
 - Exabyte: 1000 PB / 1 Million TB / 1 Billion GB 
 - Petabyte: 1000 TB / 1 Million GB / 1 Billion MB
