@@ -1,3 +1,5 @@
+## https://datameshlearning.com/user-stories/
+
 ### ABN AMRO A1
   - Providers
     - Event, batch, API-based publishers => subscribers / read-request response
@@ -79,7 +81,20 @@
   - Group/package cloud accounts (cross-account and cross cloud) account control
   - kafka, nifi
 ### DPG Media V1 S1 A1 A2 A3
-### DWP (Department for Work and Pensions – part of the UK Gov) V1
+  - Apache sqoop - batch
+  - Amazon kinesis - streaming
+  - scheduling and transforming data
+    - dbt
+    - datafy
+  - Storage
+    - S3
+    - Snowflake
+    - Elastic search 
+  - Data Integration Layer
+    - Gluie 
+  - Services for API/reporting/data science
+    - Looker/qlik/tableau for reporting
+    - dataiku/sas/databricks for data science
 ### FindHotel A1
   - Automation CI/CD Travis data validation
   - Data arrives as JSON datasets, need to be flattened
@@ -135,6 +150,16 @@
   - Stability: message broikers/kafka and orchestration plafroms like k8
   - CDC: Debezium
 ### Zalando V1 V2 V3 V4 V5
+  - Legacy => Messaging bus => Data Lake
+  - Ingestion layer => Event buss, Data center/DWH, Google analytics (web tracking)
+  - Storage layer => object and metastore
+  - Serving Layer => Presto (fast query layer), Databricks (Processing platform), Data Catalog
+  - Discoverable, Addressable, Self-describing, Secure, Trustworthy, Interoperable
+  - Remove bottleneck in the infrastructure
+  - Metadata layer (Standardize process to get access of data)
+    - BYOB, bring your own bucket - logical distribution through S3 buckets from product groups to the central storage area
+    - opt-in data storage in the central archive
+    - dedicate resources to understand usage and ensure quality.
 ### Zenseact S1
   - Data plane: Real-time data sources, enterprise applications, OEM cloud/IoT, cloud applications
   - Ingestion: Event streams, virtualisation, CDC, ETL/Automated ETL, File transfers
