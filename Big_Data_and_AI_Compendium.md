@@ -48,19 +48,54 @@
   - DataStax: Multi-cloud DBaaS built on Cassandra, and multi-cloud Streaming-as-a-Service built on Pulsar. (Founded 3/31/2010, lf: Venture, May 2021)
   - 
 ### Graph Databases
+
 ### Data Observability / Data Ops / ML Ops / Lineage
   - Monte Carlo: No-code integration to identify data issues (freshness/recency, volume, schema, distribution of duplicates and nulls, lineage to understand how data evolves), assess impact and alert teams. (Founded 2019, lf: Series B, Feb 2021) https://www.montecarlodata.com/
-### Stream-processing / Pub-Sub / Messaging 
+  - 
+### Stream-processing / Pub-Sub
+  - Amazon Kinesis: Collect, process and analyze video and data streams in real time.  Ingest Data Streams =>  Kinesis Data Analytics, Spark on EMR, EC2, AWS Lambda, custom apps. - https://aws.amazon.com/kinesis/
+  - Spark Streaming
+  - Kafka 
+  - Beam
+  - Pulsar
+  - Flink
+  - Storm
+  - nifi (Apache): Niagara Files - a dataflow management tool to collect, route, enrich, transform and process data in a reliable and scalable manner.  NiFi developed by NSA.  Web based UI, high configurability, back pressure handling, runtime flow modification.  Data provenance (lineage tracked from start to end). Designed for extension.  SSL/SSH/HTTPS/encrypted, policy management, mult-tenant authorization - https://nifi.apache.org/
+  - RocketMQ (Apache) Unified messaging engine, lightweight data processing platform.  Low latency, trillion-level message capacity guaranteed, finance oriented with high availablity and auditing features.  - https://rocketmq.apache.org/
+  - Confluent - Cloud-native service for fully managed, self-serve provisioning, elastic scaling, Apache Kafka - https://www.confluent.io/confluent-cloud
+  - Google Dataflow (Beam) - Unified stream and batch data processing that is serverless, fast and cost effective.  Fully managed, auto provisioning and management.  Horizontal autoscaling of worker resources, OSS innovation w/ Apache beam SDK, reliable/consistent exactly-once processing. https://cloud.google.com/dataflow
+  - Azure Stream Analtytics - End to end analytics pipeline, serverless, elastic, rapid scalability, enterprise grade reliability.  C#/JAvascript/SQL. - https://azure.microsoft.com/en-us/services/stream-analytics
+  - IBM streams - Real time analytics, java/scala/python, connect to nearly any data source and integrate with hadoop/spark/etc. - https://www.ibm.com/cloud/streaming-analytics
+  - Pandio - Distributed messaging built on Apache Pulsar.  Serverless, reliable, performant, flexible deployments, managed, streams/queues and pub/sub.  Distributed SQL query engine. - https://pandio.com/
+  - Apex (Apache): (Retired) Enterprise grade unified stream and batch processing engine.  Event-time windowing and high-level API.  https://attic.apache.org/projects/apex.html
+  
+ ### Messaging  Queue
+  - IBM MQ - Enterprise grade messaging,  https://www.ibm.com/products/mq
+  - Amazon SQS - Simple Queue Service, fully managed MQ for microservices, distributed systems and serverless apps https://aws.amazon.com/sqs/
+  - Amazon MQ - fully managed service OS message brokers using Apache Active MQ- https://aws.amazon.com/amazon-mq
+  - Google Pub/Sub - Messaging and ingestion for event-driven systems and streaming analytics.  Scalable, in order message delivery with pull and push modes.  Auto scale and auto provisioning, with support for 0 to hundreds of GB/sec.  
+  - RabbitMQ - most widely deployed open source message broker - https://www.rabbitmq.com/
+  - Azure Service Bus - Reliable cloud message as a service (MaaS) and simple hybrid integration - https://azure.microsoft.com/en-us/services/service-bus/
+  - ZeroMQ - Open source universal message library.  pub-sub/push-pull/client-server.  Async I/O, tiny library.  Multi-transport inproc, IPC, TCP, UDP, TIPC, multicast and WebSocket - https://zeromq.org/
+  - MQTT - The standard of IoT messaging - https://mqtt.org/
+
 ### Data Ingestion / Data Wrangling / ETL / ELT
   - Trifacta: Open, interoperable, low-code/no-code visualized data preparation, transformation and ingestion.  GDPR/SOC2 Type II/CCPA Compliant. (Founded 2012, lf: Series E, Sept 2019) https://www.trifacta.com/
   - Amazon Glue: Serverless data integration service.  Data discovery and ETL via visual and code-based interfaces.  (Preview) Elastic views to combine and replicate data across multiple data stores using SQL. - https://aws.amazon.com/glue/
+  
 ### Labeling / Annotation
   - Labelbox: Configurable platform to enable teams to create and manage ML training data.  Used to annotate data, manage p&p (people and processes) and iterate. - https://labelbox.com/
   - Hive: Data labelling, model building and complete end-to-end solutions.  https://thehive.ai/
   - Google Vertex Labeling: Request human labelers - https://cloud.google.com/vertex-ai/docs/datasets/data-labeling-job
   - Amazon SageMaker Ground Truth - offers access to public and private human labelers - https://aws.amazon.com/sagemaker/groundtruth/
+
+
 ### Monitoring / Security
+
+
 ### BI / Visualizations
+
+
 ### Notebooks
   - Apache Zeppelin:  A web-based notebook enabling data-driven, interactive data analytics and collaborative documents. (incub. rel. 7/23/2015, 0.9.0 rel 12/26/2020) - https://zeppelin.apache.org/
     - Interpreters:
@@ -97,9 +132,17 @@
     - web: https://zeppelin.apache.org/
     - repo: https://github.com/apache/zeppelin
     - twitter: https://twitter.com/ApacheZeppelin
+
+
 ### ML / NLP / Neural Network
+
+
 ### Search Engine
+
+
 ### Data Governance / Regulatory Compliance
+
+
 ### Containers
   #### Providers
     - Amazon EKS
