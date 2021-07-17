@@ -43,7 +43,8 @@
   - Microsoft Azure Synapse Analytics: Unified analytics platform, serverless/dedicated options, enterprise data warehouse, integrated with Spark and SQL engines (T-SQL), code-free visual ETL/ELT ingestion connectors, Cloud-native HTAP (Hybrid Transactional/Analtyical Processing), Integrated AI/BI with Azure ML, Azure Cognitive Services and Power BI.  Languages: T-SQL, Python, Scala, Spark SQL and .Net. - https://azure.microsoft.com/en-us/services/synapse-analytics
                 
 ## Data lake
-
+  - Dremio: Data lake engine utilizing Arrow in-memory data buffers designed for GPU and FPGA hardware acceleration, distributed query execution engine.  With Native Query Push down to optomize queries in data sources' native languages.  Optimizes data access through columnarization, compression, aggregation, sorting, partioning and co-locating data.  Maintains "reflections" (views) of datasets for heterogeneous workloads transparently to the users.  Comprehensive data lineage, full visability into how data is accessed, transformed, joined and shared facilitating data governance, security, knowledge management and remediation (complying with regulatory and legal obligations) activities.  Designed for self-service (analysts and data scientists) in mind, facilitate discovery, curation, and sharing of data without being reliant on IT.  Built on the cloud using Amazon S3 for Reflection Store. - https://www.dremio.com/
+  - Delta Lake (Databricks): Brings acid transactions, scalable metadata, time travelling (data versioning), flexible schema evolution and enforcement to Data Lakes.    Facilitates Updates/Delites and provides a transaction log for audit trails.  Connects to Spark, and has connectors to snowflake, redshift, dbt, rust, airbyte, presto, athena, power bi, hive, kafka.  
 ## SQL Databases
 
 ## NoSQL Databases
