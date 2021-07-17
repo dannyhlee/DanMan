@@ -30,68 +30,116 @@
     - IBM Cloud Block Storage: The lowest latency, highest redundancy data storage option - https://www.ibm.com/cloud/block-storage
     - IBM Cloud File Storage: The simplest solution for data organized into files and folders - https://www.ibm.com/cloud/file-storage
     - IBM Cloud Mass Data Migration: Secure hardware to physically ship petabytes of data to IBM Cloud - https://www.ibm.com/cloud/mass-data-migration
+  - **Oracle**
+    - Oracle Database Exadata Cloud Service: https://www.oracle.com/engineered-systems/exadata/cloud-service/
+    - Oracle Database EE: https://www.oracle.com/database/enterprise/
+    - Oracle Database SE: https://www.oracle.com/database/standard/
 
 ## Data warehouse
-  - Amazon Redshift: Integrated with AWS ecosystem, high performance, with AQUA (Advanced Query Accelerator, Petabyte-scale warehousing and analytics, secure and compliant (SOC1, SOC2, SOC3, PCI DSS Lvl 1)
-  - Google BigQuery: Petabyte scale, serverless, ML built-in, BigQuery Omni allows access to multi-clouds (AWS and Azure) using standard SQL, BI Engine and integration with Google Data Studio, Looker. - https://cloud.google.com/bigquery
+  - **Amazon Redshift**: Integrated with AWS ecosystem, high performance, with AQUA (Advanced Query Accelerator, Petabyte-scale warehousing and analytics, secure and compliant (SOC1, SOC2, SOC3, PCI DSS Lvl 1)
+  - **Google BigQuery**: Petabyte scale, serverless, ML built-in, BigQuery Omni allows access to multi-clouds (AWS and Azure) using standard SQL, BI Engine and integration with Google Data Studio, Looker. - https://cloud.google.com/bigquery
     -  BigQuery ML: Create and execute ML models using standard SQL queries via GC console, bq CLI, REST API, or external notebooks - https://cloud.google.com/bigquery-ml/docs/
     -  BigQuery Omni: Query AWS and Azure from BigQuery UI using standard SQL, powered by Anthos. - https://cloud.google.com/blog/products/data-analytics/introducing-bigquery-omni
       -  Anthos clusters: Enterprise-grade conformant kubernetes services across hybrid and multi-cloud environments. - https://cloud.google.com/anthos/clusters
     -  BigQuery BI Engine - https://cloud.google.com/bi-engine/docs
     -  Google Data Studio - https://analytics.google.com/analytics/academy/course/10
     -  Google Looker - Cloud based BI/Analytics platform.  Unified metrics, permissioning, version-control, security, cloud and best-in-class APIs.  Multicloud, abstraction of underlying data complexity to operationalize BI for everyone, rapid time to value and leading-edge AI/ML and advanced analytics.
-  - Microsoft Azure Synapse Analytics: Unified analytics platform, serverless/dedicated options, enterprise data warehouse, integrated with Spark and SQL engines (T-SQL), code-free visual ETL/ELT ingestion connectors, Cloud-native HTAP (Hybrid Transactional/Analtyical Processing), Integrated AI/BI with Azure ML, Azure Cognitive Services and Power BI.  Languages: T-SQL, Python, Scala, Spark SQL and .Net. - https://azure.microsoft.com/en-us/services/synapse-analytics
+  - **Microsoft Azure Synapse Analytics**: Unified analytics platform, serverless/dedicated options, enterprise data warehouse, integrated with Spark and SQL engines (T-SQL), code-free visual ETL/ELT ingestion connectors, Cloud-native HTAP (Hybrid Transactional/Analtyical Processing), Integrated AI/BI with Azure ML, Azure Cognitive Services and Power BI.  Languages: T-SQL, Python, Scala, Spark SQL and .Net. - https://azure.microsoft.com/en-us/services/synapse-analytics
                 
 ## Data lake
-  - Dremio: Data lake engine utilizing Arrow in-memory data buffers designed for GPU and FPGA hardware acceleration, distributed query execution engine.  With Native Query Push down to optomize queries in data sources' native languages.  Optimizes data access through columnarization, compression, aggregation, sorting, partioning and co-locating data.  Maintains "reflections" (views) of datasets for heterogeneous workloads transparently to the users.  Comprehensive data lineage, full visability into how data is accessed, transformed, joined and shared facilitating data governance, security, knowledge management and remediation (complying with regulatory and legal obligations) activities.  Designed for self-service (analysts and data scientists) in mind, facilitate discovery, curation, and sharing of data without being reliant on IT.  Built on the cloud using Amazon S3 for Reflection Store. - https://www.dremio.com/
-  - Delta Lake (Databricks): Brings acid transactions, scalable metadata, time travelling (data versioning), flexible schema evolution and enforcement to Data Lakes.    Facilitates Updates/Delites and provides a transaction log for audit trails.  Connects to Spark, and has connectors to snowflake, redshift, dbt, rust, airbyte, presto, athena, power bi, hive, kafka.  
-## SQL Databases
+  - **Dremio**: Data lake engine utilizing Arrow in-memory data buffers designed for GPU and FPGA hardware acceleration, distributed query execution engine.  With Native Query Push down to optomize queries in data sources' native languages.  Optimizes data access through columnarization, compression, aggregation, sorting, partioning and co-locating data.  Maintains "reflections" (views) of datasets for heterogeneous workloads transparently to the users.  Comprehensive data lineage, full visability into how data is accessed, transformed, joined and shared facilitating data governance, security, knowledge management and remediation (complying with regulatory and legal obligations) activities.  Designed for self-service (analysts and data scientists) in mind, facilitate discovery, curation, and sharing of data without being reliant on IT.  Built on the cloud using Amazon S3 for Reflection Store. - https://www.dremio.com/
+  - **Delta Lake (Databricks)**: Brings acid transactions, scalable metadata, time travelling (data versioning), flexible schema evolution and enforcement to Data Lakes.    Facilitates Updates/Delites and provides a transaction log for audit trails.  Connects to Spark, and has connectors to snowflake, redshift, dbt, rust, airbyte, presto, athena, power bi, hive, kafka.  
 
-## NoSQL Databases
-  - DataStax: Multi-cloud DBaaS built on Cassandra, and multi-cloud Streaming-as-a-Service built on Pulsar. (Founded 3/31/2010, lf: Venture, May 2021)
+## SQL Databases
+  - **MySQL**
+  - **PostgreSQL**
+  - **Microsoft SQL Server**
+  - **SQLite**
+  - **MariaDB**
+  
+## Managed SQL Services
+  - **Azure SQL Managed Instance**
+  - **Amazon**
+    - Aurora: MySQL and PostgreSQL-compatible relational database - https://aws.amazon.com/rds/aurora
+    - Amazon RDS: Amazon Relational Database Service (RDS) - https://aws.amazon.com/rds
+  - **Google Cloud**
+    - Bare metal Oracle
+    - Cloud SQL (managed mySQL, postgresql, sql server)
+  - **IBM Pg**: PostegreSQL managed databases - https://cloud.ibm.com/databases/databases-for-postgresql
+  - **IBM Db2**: Db2 db engine - https://cloud.ibm.com/catalog/services/db2
+
+## NoSQL Databases - key-value store
+  - **Amazon Keyspaces**: for Cassandra wide column store
+  - **DataStax**: Multi-cloud DBaaS built on Cassandra, and multi-cloud Streaming-as-a-Service built on Pulsar. (Founded 3/31/2010, lf: Venture, May 2021)
+  - **Google Cloud Bigtable**: Cloud-native NoSQL wide-column store for large scale, low-latency workloads - https://cloud.google.com/bigtable
+  - **Amazon DynamoDB**: https://aws.amazon.com/dynamodb
+  - **IBM Et**: DB for etcd, k-v store
+
+## NoSQL Databases - document store
+  - **MongoDB**
+  - **IBM Cloudant**: Fully managed JSON document database compatible with CouchDB - https://cloud.ibm.com/catalog/services/cloudant
+  - **Amazon DocumentDB**: https://aws.amazon.com/documentdb/
+  - **Google Firestore**: cloud native NoSQL serverless document db, with ACID transactions (query) and live sync/offline mode. - https://cloud.google.com/firestore
+  - **IBM Mg**: DBs for mongoDB https://cloud.ibm.com/databases/databases-for-mongodb/
+  - **Oracle NoSQL DB**: JSON, table, k-v https://www.oracle.com/database/technologies/related/nosql.html
+    -  With Heatwave: high-perf, in-memory query accelerator: https://www.oracle.com/mysql/heatwave/
  
+## In-Memory DB
+  - **Google Memorystore**: Managed Redis and Memcached dbs
+  - **Amazon ElastiCache**:
+    - Managed Redis - https://aws.amazon.com/elasticache/redis/
+    - Memcached - https://aws.amazon.com/elasticache/memcached/
+  - **IBM Rd**: Databases for redis - https://cloud.ibm.com/databases/databases-for-redis
 
 ## Graph Databases
+  - **Amazon Neptune**: fraud detection, social networking, recommendation engines - https://aws.amazon.com/neptune/
+
+## Time series DBs
+  - **Amazon Timestream**: IoT apps, DevOps, industrial telemtery - https://aws.amazon.com/timestream
+
+## Ledger DBs
+  - **Amazon QLDB**: System or record, supply chain, registrations, banking transactions - https://aws.amazon.com/qldb
 
 ## Data Observability / Data Ops / ML Ops / Lineage
-  - Monte Carlo: No-code integration to identify data issues (freshness/recency, volume, schema, distribution of duplicates and nulls, lineage to understand how data evolves), assess impact and alert teams. (Founded 2019, lf: Series B, Feb 2021) https://www.montecarlodata.com/
-  - 
+  - **Monte Carlo**: No-code integration to identify data issues (freshness/recency, volume, schema, distribution of duplicates and nulls, lineage to understand how data evolves), assess impact and alert teams. (Founded 2019, lf: Series B, Feb 2021) https://www.montecarlodata.com/
+
+
 ## Stream-processing / Pub-Sub
-  - Amazon Kinesis: Collect, process and analyze video and data streams in real time.  Ingest Data Streams =>  Kinesis Data Analytics, Spark on EMR, EC2, AWS Lambda, custom apps. - https://aws.amazon.com/kinesis/
+  - **Amazon Kinesis**: Collect, process and analyze video and data streams in real time.  Ingest Data Streams =>  Kinesis Data Analytics, Spark on EMR, EC2, AWS Lambda, custom apps. - https://aws.amazon.com/kinesis/
   - Spark Streaming
   - Kafka 
   - Beam
   - Pulsar
   - Flink
   - Storm
-  - nifi (Apache): Niagara Files - a dataflow management tool to collect, route, enrich, transform and process data in a reliable and scalable manner.  NiFi developed by NSA.  Web based UI, high configurability, back pressure handling, runtime flow modification.  Data provenance (lineage tracked from start to end). Designed for extension.  SSL/SSH/HTTPS/encrypted, policy management, mult-tenant authorization - https://nifi.apache.org/
-  - RocketMQ (Apache) Unified messaging engine, lightweight data processing platform.  Low latency, trillion-level message capacity guaranteed, finance oriented with high availablity and auditing features.  - https://rocketmq.apache.org/
-  - Confluent - Cloud-native service for fully managed, self-serve provisioning, elastic scaling, Apache Kafka - https://www.confluent.io/confluent-cloud
-  - Google Dataflow (Beam) - Unified stream and batch data processing that is serverless, fast and cost effective.  Fully managed, auto provisioning and management.  Horizontal autoscaling of worker resources, OSS innovation w/ Apache beam SDK, reliable/consistent exactly-once processing. https://cloud.google.com/dataflow
-  - Azure Stream Analtytics - End to end analytics pipeline, serverless, elastic, rapid scalability, enterprise grade reliability.  C#/JAvascript/SQL. - https://azure.microsoft.com/en-us/services/stream-analytics
-  - IBM streams - Real time analytics, java/scala/python, connect to nearly any data source and integrate with hadoop/spark/etc. - https://www.ibm.com/cloud/streaming-analytics
-  - Pandio - Distributed messaging built on Apache Pulsar.  Serverless, reliable, performant, flexible deployments, managed, streams/queues and pub/sub.  Distributed SQL query engine. - https://pandio.com/
-  - Apex (Apache): (Retired) Enterprise grade unified stream and batch processing engine.  Event-time windowing and high-level API.  https://attic.apache.org/projects/apex.html
+  - **nifi (Apache)**: Niagara Files - a dataflow management tool to collect, route, enrich, transform and process data in a reliable and scalable manner.  NiFi developed by NSA.  Web based UI, high configurability, back pressure handling, runtime flow modification.  Data provenance (lineage tracked from start to end). Designed for extension.  SSL/SSH/HTTPS/encrypted, policy management, mult-tenant authorization - https://nifi.apache.org/
+  - **RocketMQ (Apache)**: Unified messaging engine, lightweight data processing platform.  Low latency, trillion-level message capacity guaranteed, finance oriented with high availablity and auditing features.  - https://rocketmq.apache.org/
+  - **Confluent**: Cloud-native service for fully managed, self-serve provisioning, elastic scaling, Apache Kafka - https://www.confluent.io/confluent-cloud
+  - **Google Dataflow (Beam)**: Unified stream and batch data processing that is serverless, fast and cost effective.  Fully managed, auto provisioning and management.  Horizontal autoscaling of worker resources, OSS innovation w/ Apache beam SDK, reliable/consistent exactly-once processing. https://cloud.google.com/dataflow
+  - **Azure Stream Analtytics**: End to end analytics pipeline, serverless, elastic, rapid scalability, enterprise grade reliability.  C#/JAvascript/SQL. - https://azure.microsoft.com/en-us/services/stream-analytics
+  - **IBM streams**: Real time analytics, java/scala/python, connect to nearly any data source and integrate with hadoop/spark/etc. - https://www.ibm.com/cloud/streaming-analytics
+  - **Pandio**: Distributed messaging built on Apache Pulsar.  Serverless, reliable, performant, flexible deployments, managed, streams/queues and pub/sub.  Distributed SQL query engine. - https://pandio.com/
+  - **Apex (Apache)**: (Retired) Enterprise grade unified stream and batch processing engine.  Event-time windowing and high-level API.  https://attic.apache.org/projects/apex.html
   
- ## Messaging  Queue
-  - IBM MQ - Enterprise grade messaging,  https://www.ibm.com/products/mq
-  - Amazon SQS - Simple Queue Service, fully managed MQ for microservices, distributed systems and serverless apps https://aws.amazon.com/sqs/
-  - Amazon MQ - fully managed service OS message brokers using Apache Active MQ- https://aws.amazon.com/amazon-mq
-  - Google Pub/Sub - Messaging and ingestion for event-driven systems and streaming analytics.  Scalable, in order message delivery with pull and push modes.  Auto scale and auto provisioning, with support for 0 to hundreds of GB/sec.  
-  - RabbitMQ - most widely deployed open source message broker - https://www.rabbitmq.com/
-  - Azure Service Bus - Reliable cloud message as a service (MaaS) and simple hybrid integration - https://azure.microsoft.com/en-us/services/service-bus/
-  - ZeroMQ - Open source universal message library.  pub-sub/push-pull/client-server.  Async I/O, tiny library.  Multi-transport inproc, IPC, TCP, UDP, TIPC, multicast and WebSocket - https://zeromq.org/
-  - MQTT - The standard of IoT messaging - https://mqtt.org/
+ ## Messaging Queue
+  - **IBM MQ**: Enterprise grade messaging,  https://www.ibm.com/products/mq
+  - **Amazon SQS** : Simple Queue Service, fully managed MQ for microservices, distributed systems and serverless apps https://aws.amazon.com/sqs/
+  - **Amazon MQ**: Fully managed service OS message brokers using Apache Active MQ- https://aws.amazon.com/amazon-mq
+  - **Google Pub/Sub**: Messaging and ingestion for event-driven systems and streaming analytics.  Scalable, in order message delivery with pull and push modes.  Auto scale and auto provisioning, with support for 0 to hundreds of GB/sec.  
+  - **RabbitMQ**: most widely deployed open source message broker - https://www.rabbitmq.com/
+  - **Azure Service Bus**: Reliable cloud message as a service (MaaS) and simple hybrid integration - https://azure.microsoft.com/en-us/services/service-bus/
+  - **ZeroMQ**: Open source universal message library.  pub-sub/push-pull/client-server.  Async I/O, tiny library.  Multi-transport inproc, IPC, TCP, UDP, TIPC, multicast and WebSocket - https://zeromq.org/
+  - **MQTT**: The standard of IoT messaging - https://mqtt.org/
 
 ## Data Ingestion / Data Wrangling / ETL / ELT
-  - Trifacta: Open, interoperable, low-code/no-code visualized data preparation, transformation and ingestion.  GDPR/SOC2 Type II/CCPA Compliant. (Founded 2012, lf: Series E, Sept 2019) https://www.trifacta.com/
-  - Amazon Glue: Serverless data integration service.  Data discovery and ETL via visual and code-based interfaces.  (Preview) Elastic views to combine and replicate data across multiple data stores using SQL. - https://aws.amazon.com/glue/
+  - **Trifacta**: Open, interoperable, low-code/no-code visualized data preparation, transformation and ingestion.  GDPR/SOC2 Type II/CCPA Compliant. (Founded 2012, lf: Series E, Sept 2019) https://www.trifacta.com/
+  - **Amazon Glue**: Serverless data integration service.  Data discovery and ETL via visual and code-based interfaces.  (Preview) Elastic views to combine and replicate data across multiple data stores using SQL. - https://aws.amazon.com/glue/
   
 ## Labeling / Annotation
-  - Labelbox: Configurable platform to enable teams to create and manage ML training data.  Used to annotate data, manage p&p (people and processes) and iterate. - https://labelbox.com/
-  - Hive: Data labelling, model building and complete end-to-end solutions.  https://thehive.ai/
-  - Google Vertex Labeling: Request human labelers - https://cloud.google.com/vertex-ai/docs/datasets/data-labeling-job
-  - Amazon SageMaker Ground Truth - offers access to public and private human labelers - https://aws.amazon.com/sagemaker/groundtruth/
+  - **Labelbox**: Configurable platform to enable teams to create and manage ML training data.  Used to annotate data, manage p&p (people and processes) and iterate. - https://labelbox.com/
+  - **Hive**: Data labelling, model building and complete end-to-end solutions.  https://thehive.ai/
+  - **Google Vertex Labeling**: Request human labelers - https://cloud.google.com/vertex-ai/docs/datasets/data-labeling-job
+  - **Amazon SageMaker Ground Truth**: offers access to public and private human labelers - https://aws.amazon.com/sagemaker/groundtruth/
 
 
 ## Monitoring / Security
@@ -101,7 +149,7 @@
 
 
 ## Notebooks
-  - Apache Zeppelin:  A web-based notebook enabling data-driven, interactive data analytics and collaborative documents. (incub. rel. 7/23/2015, 0.9.0 rel 12/26/2020) - https://zeppelin.apache.org/
+  - **Apache Zeppelin**:  A web-based notebook enabling data-driven, interactive data analytics and collaborative documents. (incub. rel. 7/23/2015, 0.9.0 rel 12/26/2020) - https://zeppelin.apache.org/
     - Interpreters:
       - Spark: unified analytics engine for large-scale data processing - (rel. 5/26/2014, lr. 3/2/2021) - https://spark.apache.org/
       - JDBC: Java (API for) DataBase Connectivity - (rel. 2/19/1997, lr. 9/21/2017) https://docs.oracle.com/javase/tutorial/jdbc/basics/index.html
