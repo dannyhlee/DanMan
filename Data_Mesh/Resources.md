@@ -101,7 +101,23 @@
   - node json processor
   - javascript snoflake UDFs validated contracts
 ### Gloo A1 A2
+  - Embrace event driven streams of data, snapshots of "current", dependent apps consume latest state
+  - Embrace eventual data consistency.  Accept data is not SSOT.  Stream data changes.
+  - Embrace your data, and responsibilites with owning it.  Be clear on duties to provide source of truth, expected quality, implementation (sample queries and documentation of fields).  
+  - Embrace new vocabulary
+    - data mesh: conceptual representation of the interconnection and coordination of data nodes.  Establishing boundaries of ownership/responsibility and governance.  
+    - data mesh platform: the tools, tech and patterns to built a mesh that handles the creation, maintenance, syncing, authorization and wind-down of data products
+    - data product: An individual curated data set.  Usually bounded by a domain, but at least clearly documented to express its boundaries
+    - data domain: a set of products for a particular boundary of ownership
+    - application process domains: logical grouping of systems or processes/application to deliver a business goal.  
+    - data port: the means to access data products (sql, rest, kafka, webhooks, etc)
+  - Governance issues:
+    - Availability of data (quality, refresh rate, access, avail. of data ports)
+    - Consent (right to use the data)
+    - ?? What to do with copied data?  Revoking access.
+
 ### HelloFresh V1
+
 ### If Insurance / If P&C A1 A2
   - EDW on Teradata
   - DW on Google Bigquery
